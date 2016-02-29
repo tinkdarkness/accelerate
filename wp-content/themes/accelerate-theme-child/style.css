@@ -26,7 +26,7 @@
 
 #masthead nav ul li {
 	float:left;
-	margin:0 10px:
+	margin:10px 10px:
 }
 
 /* blog post on homepage */
@@ -78,8 +78,9 @@
  
  div.case-study-images img {
  	display:block:
- 	margin-bottom:50px;
+ 	margin-bottom:1000px;
  	border:1px solid #dddddd;
  }
+
 
 
