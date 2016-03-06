@@ -497,7 +497,8 @@ h1 {
 
 #masthead nav {
     float: right;
-}
+    margin-top: -25px;
+    }
 
 #masthead nav ul {
 	list-style-type:none;

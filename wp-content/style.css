@@ -26,11 +26,7 @@
 
 #masthead nav ul li {
 	float:left;
-	margin-right: 70px;
-	font-weight: light;
-	font-size: 20px;
-    text-transform: uppercase;
-	color:white;
+	margin:0 10px:
 }
 
 /* blog post on homepage */
@@ -82,65 +78,8 @@
  
  div.case-study-images img {
  	display:block:
- 	margin-bottom:1000px;
+ 	margin-bottom:50px;
  	border:1px solid #dddddd;
  }
 
-
-/* Contact Us */
-
-p {
-    margin-bottom: 24px;
-    width: 600px;
-}
-
-#ninja_forms_field_1_div_wrap {
-    box-sizing: border-box;
-    float: left;
-    margin-right: 34px;
-    width: 283px;
-}
-
-#ninja_forms_field_2_div_wrap {
-	box-sizing: border-box;
-    float: left;
-    width: 283px;
-}
-
-#ninja_forms_field_3_div_wrap {
-	box-sizing: border-box;
-    float: left;
-    width: 600px;
-}
-
-#ninja_forms_field_5_div_wrap {
-    box-sizing: border-box;
-    background: red;
-    width: 206px;
-	height: 55px;
-    clear: both;
-    float: right;
-    margin-right: 360px;
-}
-
-#ninja_forms_field_5 {
-	width: 206px;
-	height: 55px;
-	background: #45ac9d;
-	}
-	
-.button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: #45ac9d;
-    background-image: none;
-    background-origin: padding-box;
-    background-position: 0 0;
-    background-repeat: repeat;
-    background-size: auto auto;
-	cursor: pointer;
-	color: white;
-	border: none;
-	font-weight: 700;
-}
 
