@@ -14,10 +14,10 @@
 
 get_header(); ?>
 
-<section class="home-page">
+<section class="about-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
+			<div class='about-hero'>
 			<p class="paragraph-class">
 				<?php the_content(); ?>
 			</p>
@@ -25,12 +25,31 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 	</div>
 </section>
-	
-		<h3>Our Services</h3>
-		<h4>We take Pride in our clients and the content we create for them.</h4>
-		<h4>Here's a brief overview of our services.</h4>	
-		<h3>Interested in working with us?</h3>
+
+<section class="aboutservices">
+	<div class="ourservices">
+		<p class="ourservices">
+			<h2>Our Services</h2>
+			<h4>We take Pride in our clients and the content we create for them.<br>
+			Here's a brief overview of our services.</h4>
+		</p>
+	</div>
+	<div class="content-strategy">
+	</div>
+	<div class="influencer-mapping">
+	</div>
+	<div class="social-media-strategy">
+	</div>
+	<div class="design-and-development">
+	</div>
+	<div class="work-with-us">
+		<p class="interested">
+			<h3>Interested in working with us?</h3>
+		</p>
 			<a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
+	</div>
+</section>
+
 	</div><!-- #content -->
 </div><!-- #primary -->
 
