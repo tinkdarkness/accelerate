@@ -26,22 +26,33 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="aboutservices">
-	<div class="ourservices">
-		<p class="ourservices">
-			<h2>Our Services</h2>
+<section class="about-services">
+	<div class="site-content">
+		<p class="our-services-top">
+			<center><h2>Our Services</h2>
 			<h4>We take Pride in our clients and the content we create for them.<br>
-			Here's a brief overview of our services.</h4>
+			Here's a brief overview of our services.</h4></center>
 		</p>
+	<ul class="our-services">
+	<?php query_posts('posts_per_page=4&post_type=services'); ?>
+		<?php while ( have_posts() ) : the_post(); 
+			$size = "full";	
+			$service = get_field('service_title');
+			$service_description= get_field('service_description');
+			$icon = get_field('icon');?>
+		
+		
+	<?php endwhile; // end of the loop. ?>
+		<?php wp_reset_query(); // resets the altered query back to the original ?>
+	</ul>
 	</div>
-	<div class="content-strategy">
+	<div class="work-with-us">
+		<p class="interested">
+			<h3>Interested in working with us?</h3>
+		</p>
+			<a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
 	</div>
-	<div class="influencer-mapping">
-	</div>
-	<div class="social-media-strategy">
-	</div>
-	<div class="design-and-development">
-	</div>
+</section>
 	<div class="work-with-us">
 		<p class="interested">
 			<h3>Interested in working with us?</h3>

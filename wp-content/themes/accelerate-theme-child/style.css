@@ -86,11 +86,23 @@
  	border:1px solid #dddddd;
  }
 
+.site-footer {
+    clear: both;
+    color: #909090;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 40px auto;
+}
+
 
 /* Contact Us */
 
 p {
-    margin-bottom: 24px;
+    color: #3b3b3b;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 150px;
+    margin-top: 24px;
     width: 600px;
 }
 
@@ -144,6 +156,14 @@ p {
 	font-weight: 700;
 }
 
+.site-footer {
+    clear: both;
+    color: #909090;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 40px auto;
+}	
+
 /* About */
 
 .about-page {
@@ -158,6 +178,7 @@ p {
 }
 
 p {
+    clear: both;    
     color: #ffffff;
     font-size: 40px;
     font-weight: bold;
@@ -176,4 +197,12 @@ p {
 	margin-left: 300px;
 	text-align: center;
 	color: #3b3b3b;
+}
+
+.site-footer {
+    clear: both;
+    color: #909090;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 40px auto;
 }

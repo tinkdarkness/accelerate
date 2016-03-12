@@ -40,8 +40,8 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
-    
-     register_post_type( 'services',
+
+register_post_type( 'services',
         array(
             'labels' => array(
                 'name' => __( 'Services' ),
@@ -54,4 +54,3 @@
     );
 }
 add_action( 'init', 'create_custom_post_types' );
-
