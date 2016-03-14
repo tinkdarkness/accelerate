@@ -17,7 +17,6 @@ get_header(); ?>
 			$email = get_field('email');
 			$your_message = get_field('your message');?>
 			
-		<?php while ( have_posts() ) : the_post(); ?>
 					<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>

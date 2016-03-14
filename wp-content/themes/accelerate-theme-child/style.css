@@ -62,7 +62,15 @@
 	text-transform: uppercase;
 }
 
-
+.p {
+    clear: both;
+    color: #3b3b3b;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 150px;
+    margin-top: 24px;
+    width: 600px;
+}
  /*Case Studies */
  
  article.case-study {
@@ -99,11 +107,12 @@
 
 p {
     color: #3b3b3b;
-    font-size: 24px;
+    font-size: 17px;
+    line-height:1.5;
     font-weight: normal;
-    margin-bottom: 150px;
+    margin-bottom: 24px;
     margin-top: 24px;
-    width: 600px;
+    width: 640px;
 }
 
 #ninja_forms_field_1_div_wrap {
@@ -156,14 +165,14 @@ p {
 	font-weight: 700;
 }
 
-.site-footer {
-    clear: both;
-    color: #909090;
-    font-size: 15px;
+.site-description {
+	clear: both;
+	color: #3b3b3b;
+    font-size: 17px;
     line-height: 1.5;
     margin: 40px auto;
-}	
-
+	width: 640px;
+}
 /* About */
 
 .about-page {
@@ -177,7 +186,7 @@ p {
 	text-align: center;
 }
 
-p {
+.p {
     clear: both;    
     color: #ffffff;
     font-size: 40px;
