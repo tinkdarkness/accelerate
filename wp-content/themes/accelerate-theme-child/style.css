@@ -187,8 +187,9 @@ p {
 	margin:auto;
 }
 
-article.service {
+article.individual-service {
 	margin 40px auto;
+	display: block;
 }
 
 p {
@@ -210,7 +211,8 @@ p {
 
 div.site-content {
 	width: 960px;
-	margin: auto:
+	margin: auto;
+	display: block;
 }
 
 .our-services {
@@ -219,6 +221,10 @@ div.site-content {
 	margin: auto;
 	text-align: center;
 	color: #3b3b3b;
+}
+
+.services-list {
+	display: block;
 }
 
 .site-description {

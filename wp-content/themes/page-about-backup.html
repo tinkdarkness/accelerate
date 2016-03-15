@@ -15,7 +15,7 @@
 get_header(); ?>
 
 <section class="about-page">
-	<div id="site-content">
+	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<p class="paragraph-class">
 				<?php the_content(); ?>
@@ -31,13 +31,9 @@ get_header(); ?>
 			<center><h2>Our Services</h2>
 			<h4>We take Pride in our clients and the content we create for them.<br>
 			Here's a brief overview of our services.</h4></center>
-		</p>
-		</div>
-</section>
+		</p></div>
 		
-	<section class="services-list">
-	<div class="site-content">
-	<ul class="about-services">
+	<ul class="services">
 	<?php query_posts('posts_per_page=4&post_type=services'); ?>
 		<?php while ( have_posts() ) : the_post(); 
 			$size = "full";	
@@ -45,18 +41,19 @@ get_header(); ?>
 			$service_description= get_field('service_description');
 			$icon = get_field('icon');?>
 		<li class="individual-service">
-			<figure>
+				<figure>
 					<?php echo wp_get_attachment_image($icon, $size); ?>
 				</figure>
+			
+			
 			<h3><?php service_title(); ?></h3>
 			<h4><?php service_description(); ?></h4>
 			</li>
+		
 	<?php endwhile; // end of the loop. ?>
 		<?php wp_reset_query(); // resets the altered query back to the original ?>
 	</ul>
 	</div>
-	</section>
-<section class="contact">
 	<div class="work-with-us">
 		<p class="interested">
 			<h3>Interested in working with us?</h3>
@@ -64,8 +61,8 @@ get_header(); ?>
 			<a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
 	</div>
 </section>
-</div>
-
+	</div><!-- #content -->
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
