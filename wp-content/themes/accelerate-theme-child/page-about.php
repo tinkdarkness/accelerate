@@ -21,7 +21,6 @@ get_header(); ?>
 				<?php the_content(); ?>
 			</p>
 		<?php endwhile; // end of the loop. ?>
-		<?php wp_reset_query(); // resets the altered query back to the original ?>
 	</div>
 </section>
 
@@ -35,21 +34,21 @@ get_header(); ?>
 		</div>
 </section>
 		
-	<section class="services-list">
-	<div class="site-content">
-	<ul class="about-services">
-	<?php query_posts('posts_per_page=4&post_type=services'); ?>
+	<section class="service-list">
+	<div class="list-content">
+	<ul class="about-service list">
+	<?php query_posts('posts_per_page=4&post_type=service'); ?>
 		<?php while ( have_posts() ) : the_post(); 
-			$size = "full";	
-			$service = get_field('service_title');
+			$size = 'full';	
+			$service_title = get_field('service_title');
 			$service_description= get_field('service_description');
 			$icon = get_field('icon');?>
 		<li class="individual-service">
 			<figure>
 					<?php echo wp_get_attachment_image($icon, $size); ?>
 				</figure>
-			<h3><?php service_title(); ?></h3>
-			<h4><?php service_description(); ?></h4>
+			<h3><?php echo $service_title(); ?></h3>
+			<h4><?php echo $service_description(); ?></h4>
 			</li>
 	<?php endwhile; // end of the loop. ?>
 		<?php wp_reset_query(); // resets the altered query back to the original ?>
@@ -64,7 +63,7 @@ get_header(); ?>
 			<a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
 	</div>
 </section>
-</div>
+
 
 
 

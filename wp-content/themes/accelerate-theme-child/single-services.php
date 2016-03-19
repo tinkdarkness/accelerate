@@ -19,16 +19,15 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='about-hero'>
 			<p class="paragraph-class">
-				<?php the_content(); ?>
+				<?php echo $the_content(); ?>
 			</p>
 			</div>
 	<?php endwhile; // end of the loop. ?>
-<?php wp_reset_query(); // resets the altered query back to the original ?>
 </div>
 </section>
 
 <section class="about-services">
-	<div class="site-content">
+	<div class="info">
 		<p class="our-services-top">
 			<center><h2>Our Services</h2>
 			<h4>We take Pride in our clients and the content we create for them.<br>
@@ -38,16 +37,15 @@ get_header(); ?>
 	</section>
 	
 <section class="services-list">
-	<article class="individual-service">
-			<div class="info">
+	<article class="service">
 			<?php while ( have_posts() ) : the_post(); 
 				$size = "full";	
 				$service_title = get_field('service_title');
 				$service_description = get_field('service_description');
 				$icon = get_field('icon'); ?>
 	
-				<h2><?php $service_title; ?></h2>
-				<h5><?php $service_description; ?></h5></div>
+				<center><h2><?php echo $service_title(); ?></h2></center>
+				<h5><?php echo $service_description(); ?></h5>
 				
 			<div class="service_icon">
 				<?php if($icon) { ?>
@@ -58,7 +56,7 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 	<?php wp_reset_query(); // resets the altered query back to the original ?>
 </section>
-	</div><!-- #content -->
+	
 
 
 <?php get_footer(); ?>		

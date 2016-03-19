@@ -183,13 +183,15 @@ p {
 }
 
 .about-hero {
-	width; 960px;
+	width: 960px;
 	margin:auto;
 }
 
-article.individual-service {
-	margin 40px auto;
+article.service {
+	clear: both;
+	margin: 40px auto;
 	display: block;
+	color: red;
 }
 
 p {
@@ -209,7 +211,7 @@ p {
     background: none repeat scroll 0 0 #45ac9d;
 }
 
-div.site-content {
+div.info {
 	width: 960px;
 	margin: auto;
 	display: block;
@@ -223,15 +225,35 @@ div.site-content {
 	color: #3b3b3b;
 }
 
-.services-list {
+div.services-list {
 	display: block;
 }
 
 .site-description {
-	clear: both;
+	float: left;
 	color: #3b3b3b;
     font-size: 17px;
     line-height: 1.5;
-    margin: 40px auto;
+    margin: auto;
 	width: 640px;
+}
+
+ div.service_icon {
+ 	display:block:
+ 	margin-bottom:1000px;
+ 	border:1px solid #dddddd;
+ }
+
+.site-footer p {
+    float: left;
+    color: #909090;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: auto;
+    text-align: left;
+}
+
+div.work-with-us {
+	display: block;
+	color: #3b3b3b;
 }

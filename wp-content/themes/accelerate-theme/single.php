@@ -34,8 +34,8 @@ get_header(); ?>
 						</div>
 						<footer class="entry-footer">
 							<div class="entry-meta">
-								<span class="entry-terms author">Written by <a href="">Emily Davis</a></span>
-								<span class="entry-terms category">Posted in <a href="">My Notes</a></span>
+								<span class="entry-terms author">Written by <a href="">Ashley Hampton</a></span>
+								<span class="entry-terms category">Posted in <a href="">My Blog</a></span>
 								<span class="entry-terms commets">No Comments</span>
 							</div>
 						</footer>
