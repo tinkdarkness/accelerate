@@ -32,11 +32,11 @@ get_header(); ?>
 			Here's a brief overview of our services.</h4></center>
 		</p>
 		</div>
-</section>
+
 		
-	<section class="service-list">
+	
 	<div class="list-content">
-	<ul class="about-service list">
+	<ul class="about-service-list">
 	<?php query_posts('posts_per_page=4&post_type=service'); ?>
 		<?php while ( have_posts() ) : the_post(); 
 			$size = 'full';	
@@ -54,6 +54,7 @@ get_header(); ?>
 		<?php wp_reset_query(); // resets the altered query back to the original ?>
 	</ul>
 	</div>
+	</section>
 	</section>
 <section class="contact">
 	<div class="work-with-us">

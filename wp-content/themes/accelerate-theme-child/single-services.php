@@ -36,7 +36,7 @@ get_header(); ?>
 		</div>
 	</section>
 	
-<section class="services-list">
+<div class="services-list">
 	<article class="service">
 			<?php while ( have_posts() ) : the_post(); 
 				$size = "full";	
@@ -45,7 +45,7 @@ get_header(); ?>
 				$icon = get_field('icon'); ?>
 	
 				<center><h2><?php echo $service_title(); ?></h2></center>
-				<h5><?php echo $service_description(); ?></h5>
+				<h5><?php echo $service_description(); ?></h5></div>
 				
 			<div class="service_icon">
 				<?php if($icon) { ?>
@@ -55,7 +55,6 @@ get_header(); ?>
 			</article>
 	<?php endwhile; // end of the loop. ?>
 	<?php wp_reset_query(); // resets the altered query back to the original ?>
-</section>
 	
 
 
