@@ -25,7 +25,7 @@ get_header(); ?>
 </section>
 
 <section class="about-services">
-	<div class="site-content">
+	<div class="info">
 		<p class="our-services-top">
 			<center><h2>Our Services</h2>
 			<h4>We take Pride in our clients and the content we create for them.<br>
@@ -35,15 +35,15 @@ get_header(); ?>
 
 		
 	
-	<div class="list-content">
+	<div class="services-list">
 	<ul class="about-service-list">
-	<?php query_posts('posts_per_page=4&post_type=service'); ?>
+	<?php query_posts('posts_per_page=4&post_type=services'); ?>
 		<?php while ( have_posts() ) : the_post(); 
 			$size = 'full';	
 			$service_title = get_field('service_title');
 			$service_description= get_field('service_description');
 			$icon = get_field('icon');?>
-		<li class="individual-service">
+		<li class="single-services">
 			<figure>
 					<?php echo wp_get_attachment_image($icon, $size); ?>
 				</figure>
@@ -55,7 +55,7 @@ get_header(); ?>
 	</ul>
 	</div>
 	</section>
-	</section>
+
 <section class="contact">
 	<div class="work-with-us">
 		<p class="interested">

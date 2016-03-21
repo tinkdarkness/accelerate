@@ -34,17 +34,17 @@ get_header(); ?>
 			Here's a brief overview of our services.</h4></center>
 		</p>
 		</div>
-	</section>
+	
 	
 <div class="services-list">
-	<article class="service">
+	<article class="services">
 			<?php while ( have_posts() ) : the_post(); 
 				$size = "full";	
 				$service_title = get_field('service_title');
 				$service_description = get_field('service_description');
 				$icon = get_field('icon'); ?>
 	
-				<center><h2><?php echo $service_title(); ?></h2></center>
+<center><h2><?php echo $service_title(); ?></h2></center>
 				<h5><?php echo $service_description(); ?></h5></div>
 				
 			<div class="service_icon">
@@ -55,7 +55,7 @@ get_header(); ?>
 			</article>
 	<?php endwhile; // end of the loop. ?>
 	<?php wp_reset_query(); // resets the altered query back to the original ?>
-	
+	</section>
 
 
 <?php get_footer(); ?>		
